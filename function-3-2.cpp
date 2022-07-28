@@ -3,6 +3,9 @@
 #include <iostream>
 using namespace std;
 int median_array(int array[], int n) {
+    if (n < 1 || n % 2 == 0){
+        return 0;
+    }
   int i = 0;
   int j = n;
   int k = 0;
@@ -22,9 +25,7 @@ int median_array(int array[], int n) {
     }
   }
   int median = 0;
-  if ((n % 2) == 0) {
-    median = (sortedarray[j / 2] + sortedarray[(j / 2) - 1]) / 2;
-  } else {
+  if ((n % 2) != 0) {
     median = sortedarray[j / 2];
   }
   return median;
