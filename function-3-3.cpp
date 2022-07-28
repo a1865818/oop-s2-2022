@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-double weightedAverage(int arr[], int size) {
+double weighted_average(int arr[], int size) {
   double sum = 0;
   int count;
   for (int i = 0; i < size; i++) {
