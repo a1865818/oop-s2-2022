@@ -13,6 +13,15 @@ bool is_palindrome(int integers[], int length) {
     }
     return true;
 }
+int sum_array_elements(int integers[], int length) {
+    int sum = 0;
+    for (int i = 0; i < length; i++)
+    {
+        sum = sum + integers[i];
+    }
+    return sum;
+}
+
 int sum_if_palindrome(int integers[], int length) {
     int sum = 0;
     if (length < 1)
@@ -20,10 +29,13 @@ int sum_if_palindrome(int integers[], int length) {
         return -1;
     }
     
-    for (int i = 0; i < length; i++)
+    if (is_palindrome(integers,length) == true)
     {
-        sum = sum + integers[i];
+        return sum_array_elements(integers,length);
     }
-    return sum;
+    else {
+        return -2;
+    }
+    
 
 }
