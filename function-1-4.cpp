@@ -5,7 +5,11 @@ using namespace std;
     {
         for (int j = 0; j < 3; j++)
         {
-            cout<<array[i][j]*3<<" ";
+            if ( j == 2) {
+                cout << array[i][j]*3;
+            } else {
+                cout<<array[i][j]*3<<" ";
+            }
         }
         cout<<endl;
     }
