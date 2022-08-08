@@ -5,7 +5,7 @@ void print_class(std::string courses[4], std::string students[],
   cout
        << "Report Card"<<" ";
   for (int i = 0; i < 4; i++) {
-    if (i != 4) {
+    if (i < 3) {
       cout << courses[i] << " ";
     } else {
       cout << courses[i];
@@ -16,7 +16,7 @@ void print_class(std::string courses[4], std::string students[],
     cout << students[i] << " ";
     
     for (int j = 0; j < 4; j++) {
-          if (i != 4) {
+          if (i < 3) {
       cout << report_card[i][j] << " ";
     } else {
       cout << report_card[i][j];
