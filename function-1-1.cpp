@@ -10,7 +10,9 @@ void printer(int array[10][10]) {
             {
                 cout<<array[i][j]<<" ";
             }
-            
+            else {
+                  cout<<array[i][j];
+            }
             
         }
         cout<<endl;
