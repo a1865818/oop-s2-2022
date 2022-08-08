@@ -3,7 +3,7 @@ using namespace std;
 extern void print_class(std::string courses[4], std::string students[], int report_card[][4], int nstudents);
 int main() {
 
-string courses[4] = {"OOP", "Statistics", "Electronics", "Quantum Mechanics"};
+string courses[4] = {"OOP", "Intro SE", "Japanese", "Math IB"};
 
 string students[2] = {"Joe", "Bethany"};
 
