@@ -23,12 +23,12 @@ float sum,result;
 if(op=="+")
 {
 sum=add_op(left,right); //call function if operation is add
-cout<<sum<<endl;;
+cout<<sum<<" "<<endl;;
 }
 else if(op=="-")
 {
 result=subtract_op(left, right); //call function if operation is subtract
-cout<<result<<endl;
+cout<<result<<" "<<endl;
 }
 return 0;
 }

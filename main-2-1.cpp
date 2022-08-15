@@ -10,7 +10,7 @@ int main()
 {
 float left,right;
 std::string op;
-cout<<"Enter the two numbers and the operation(add/subtract):";
+
 cin>>left;
 cin>>right;
 cin>>op;
