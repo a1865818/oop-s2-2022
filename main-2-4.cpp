@@ -11,9 +11,9 @@ int main()
 {
 float left,right;
 std::string op;
-op="add";
-left =3;
-right =5;
-cout<<arithmetic_ops(left, right,op)<<endl; //calling the function to perform arithmetic operation.
+cin>>left;
+cin>>right;
+cin>>op;
+arithmetic_ops(left, right,op); //calling the function to perform arithmetic operation.
 return 0;
 }

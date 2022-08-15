@@ -20,12 +20,12 @@ return result;
 float arithmetic_ops(float left, float right, std::string op)
 {
 float sum,result;
-if(op=="add")
+if(op=="+")
 {
 sum=add_op(left,right); //call function if operation is add
 cout<<sum<<endl;;
 }
-else if(op=="subtract")
+else if(op=="-")
 {
 result=subtract_op(left, right); //call function if operation is subtract
 cout<<result<<endl;
