@@ -30,5 +30,5 @@ else if(op=="subtract")
 result=subtract_op(left, right); //call function if operation is subtract
 cout<<result<<endl;
 }
-
+return 0;
 }

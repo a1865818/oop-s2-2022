@@ -6,6 +6,6 @@ int a, *p;
 p = &a;
 int *t = new int;
 int *arr = new int[3];
-return 3*sizeof(arr);
+return (3*sizeof(arr))/2;
 
 }

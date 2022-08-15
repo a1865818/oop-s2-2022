@@ -39,4 +39,5 @@ cout<<result<<endl;
     result = multiply_op(left,right);
     cout<<result<<endl;
 }
+return 0;
 }
