@@ -9,10 +9,6 @@ second[i][0] = first[i][0];
 second[i][1] = first[i][1];
 
 }
-for (int i = 0; i < n; i++)
-{
-   cout  << second[i][0]<< " " << second[i][1]<<" " << endl;
 
-}
 
  }
