@@ -8,16 +8,6 @@ using namespace std;
     {
         *(newA+i)=*(oldA+i);
     }
-    for (int i = 0; i < length; i++)
-    {
-        
-        if (i<length-1)
-        {
-            cout<<*(newA+i)<<" ";
-        }
-        else {
-            cout<<*(newA+i);
-        }
-   }
+   
 
  }
