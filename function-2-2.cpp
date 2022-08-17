@@ -1,19 +1,20 @@
 #include<string>
 #include<iostream>
-#include<climits>
+
 using namespace std;
 int max_sub_sum(int *nums,int length) {
-  int max_so_far = INT_MIN, max_ending_here = 0;
-  
-    for (int i = 0; i < length; i++)
-    {
-        max_ending_here = max_ending_here + nums[i];
-        if (max_so_far < max_ending_here)
-            max_so_far = max_ending_here;
-  
-        if (max_ending_here < 0)
-            max_ending_here = 0;
-    }
-    return max_so_far;
+ int sum = 0;
+int max_so_far = -1, max_ending_here = 0;
+
+for (int i = 0; i < length; i++) {
+sum = sum + *nums;;
+if (max_so_far < sum)
+max_so_far = sum;
+
+if (sum < 0)
+sum = 0;
+nums++; // inc pointer
+}
+return max_so_far;
     
 }
