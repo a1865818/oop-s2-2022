@@ -11,7 +11,14 @@ second[i][1] = first[i][1];
 }
 for (int i = 0; i < n; i++)
 {
-cout  << second[i][0]<< " " << second[i][1] << endl;
+    if (i < n-1)
+    {
+        cout  << second[i][0]<< " " << second[i][1]<<" " << endl;
+    }else {
+        cout  << second[i][0]<< " " << second[i][1] << endl;
+    }
+    
+
 }
 
  }

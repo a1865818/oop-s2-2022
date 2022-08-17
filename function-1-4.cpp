@@ -13,7 +13,7 @@ if (i<length-1)
 {
     cout << *(new_array + i) << " ";
 }else {
-    cout << *(new_array + i) << endl;
+    cout << *(new_array + i);
 }
 
 }

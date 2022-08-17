@@ -16,7 +16,7 @@ using namespace std;
             cout<<*(newA+i)<<" ";
         }
         else {
-            cout<<*(newA+i)<<endl;
+            cout<<*(newA+i);
         }
    }
 
