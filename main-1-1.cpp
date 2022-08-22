@@ -1,5 +1,5 @@
 #include <iostream>
-extern int *readNumbers(int n);
+extern int *readNumbers();
 extern void printNumbers(int *numbers, int length);
 int main() {
   int n;
@@ -7,7 +7,7 @@ int main() {
  
   std::cin >> n;
 
-  int *array = readNumbers(n);
+  int *array = readNumbers();
 
   
 
