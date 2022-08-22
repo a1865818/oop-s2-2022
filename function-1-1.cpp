@@ -4,7 +4,7 @@ int *readNumbers() {
   int *numbers = new int[10];
 
   for (int i = 0; i < 10; i++) {
-    std::cout << "Enter the number #" << i + 1 << ": ";
+   
     std::cin >> numbers[i];
   }
 
