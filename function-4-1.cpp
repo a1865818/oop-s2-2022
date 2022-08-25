@@ -23,8 +23,8 @@ int *matrix_min_max(int **vals, int num_rows, int num_cols) {
     
   }
   
-  cout << *mm << endl;
-  cout << *(mm+1 )<< endl;
+  cout <<"min: " <<*mm <<" " << "max: "<<*(mm+1 )<<endl;
+
   
   return 0;
 }
