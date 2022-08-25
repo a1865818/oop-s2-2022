@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-extern int *matrix_min_max(int**vals,int rows,int columns) ;
+extern int *matrix_min_max(int**vals,int num_rows,int num_cols) ;
 int main () {
     int row1[]={10,15,99};
     int row2[]={100,5,73};
