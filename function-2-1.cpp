@@ -3,9 +3,7 @@
 using namespace std;
 string month_lookup(int month) {
   string month_name;
-  if (month < 1 && month > 12) {
-    cout << "invalid month";
-  } else {
+ 
     switch (month) {
       case 1:
         month_name = "Jan";
@@ -43,7 +41,9 @@ string month_lookup(int month) {
       case 12:
         month_name = "Dec";
         break;
-    }
+      default:
+        month_name="invalid month";
+        break;
   }
   return month_name;
 }
