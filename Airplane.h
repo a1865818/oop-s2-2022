@@ -1,3 +1,5 @@
+#ifndef AIRPLANE_H
+#define AIRPLANE_H
 #include <string>
 #include "Person.h"
 using namespace std;
@@ -14,3 +16,4 @@ class Airplane {
   Person thePilot;
   Person theCoPilot;
 };
+#endif

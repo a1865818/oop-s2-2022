@@ -1,3 +1,5 @@
+#ifndef PERSON
+#define PERSON
 #include<iostream>
 #include<string>
 using namespace std;
@@ -13,3 +15,4 @@ class Person{
         int getSalary();
         void setSalary(int mySalary);
 };
+#endif
