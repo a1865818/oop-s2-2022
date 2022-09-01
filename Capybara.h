@@ -13,6 +13,6 @@ class Capybara {
         void setName(string capyName);
         int getAge();
         void setAge(int capyAge);  
-        ~Capybara();
+        
 };
 #endif
