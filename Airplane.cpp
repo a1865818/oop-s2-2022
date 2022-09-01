@@ -13,7 +13,7 @@ Person Airplane::getPilot() { return thePilot; }
 void Airplane::setCoPilot(Person theCoPilot) { this->theCoPilot = theCoPilot; }
 Person Airplane::getCoPilot() { return theCoPilot; }
 void Airplane::printDetails() {
-  cout << "Call Sign :" << callsign << endl;
-  cout << "Pilot Name :" << thePilot.getName() << endl;
-  cout << "The Co-Pilot Name :" << theCoPilot.getName() << endl;
+  cout << callsign << endl;
+  cout <<  thePilot.getName() << endl;
+  cout <<  theCoPilot.getName() << endl;
 }
