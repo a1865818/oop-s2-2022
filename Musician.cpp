@@ -17,5 +17,3 @@ int Musician::get_experience()
 {
   return experience;
 }
-Musician::~Musician()
-{}
