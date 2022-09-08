@@ -1,13 +1,13 @@
 #include<iostream>
-#include "Cage.h"
+#include "MusicBox.h"
 using namespace std;
 int main () {
-    Cage *a ,*b;
-    a=new Cage();
-    b=new Cage("ABC",10);
-    cout<<a->get_name()<<endl;
-    cout<<a->get_IDnum()<<endl;
-    cout<<b->get_name()<<endl;
-    cout<<b->get_IDnum()<<endl;
+    MusicBox *a ,*b;
+    a=new MusicBox();
+    b=new MusicBox("ABC",100);
+    cout<<a->get_song()<<endl;
+    cout<<a->get_width()<<endl;
+    cout<<b->get_song()<<endl;
+    cout<<b->get_width()<<endl;
     return 0;
 }
