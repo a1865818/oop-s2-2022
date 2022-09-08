@@ -5,10 +5,10 @@
 using namespace std;
 class StoreShelf{
     private:
-        int width;
-        int max_width;
-        int curr_size;
-        MusicBox *members;
+         MusicBox *boxes;
+    int size; //max size
+    int cur; //current size
+    int n; //current number of music boxes
     public:
         StoreShelf();
         StoreShelf( int width);

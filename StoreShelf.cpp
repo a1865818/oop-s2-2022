@@ -1,38 +1,33 @@
-#include<string>
-#include<iostream>
-#include"StoreShelf.h"
-using namespace std;
-StoreShelf::StoreShelf(): max_width(0),
-    members(NULL){
-   
+#include "StoreShelf.h"
 
+StoreShelf::StoreShelf() {
+    size = 0;
+    n = 0;
+    cur = 0;
 }
-StoreShelf::StoreShelf(int width):max_width(width){
-    
-    members=new MusicBox[width];
+
+StoreShelf::StoreShelf(int width) {
+    size = width;
+    n = 0;
+    cur = 0;
+    boxes = new MusicBox[size * 2];
 }
-int StoreShelf::get_num_music_boxes(){
-    return curr_size;
-}
-int StoreShelf::get_width() {
-  return width;
-}
-// string StoreShelf::get_name() {
-//     return name;
-// }
-MusicBox* StoreShelf::get_contents(){
-    return members;
-}
-bool StoreShelf::add_music_box(MusicBox a_music_box){
-    if (curr_size < max_width)
-  {
-    members[curr_size] = a_music_box;
-    curr_size++;
+
+int StoreShelf::get_width() { return size; }
+
+int StoreShelf::get_num_music_boxes() { return n; }
+
+MusicBox *StoreShelf::get_contents() { return boxes; }
+
+bool StoreShelf::add_music_box(MusicBox a_music_box) {
+    int t = a_music_box.get_width();
+    if (cur + t > size) return false;
+    boxes[n] = a_music_box;
+    n++;
+    cur += t;
     return true;
-  }
-  return false;
 }
-StoreShelf::~StoreShelf()
-{
-    if (members != NULL) delete[] members;
+
+StoreShelf::~StoreShelf() { 
+    delete[] boxes; 
 }

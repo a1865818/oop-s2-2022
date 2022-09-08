@@ -32,7 +32,7 @@ MusicBox c("c",40);
 MusicBox d("d",20);
 MusicBox e("e",30);
 MusicBox f("f",10);
-StoreShelf storeshelf(5);
+StoreShelf storeshelf(4);
  cout<<storeshelf.get_width() <<endl;
  cout<<storeshelf.get_num_music_boxes()<<endl;
  if (storeshelf.add_music_box(a)){
