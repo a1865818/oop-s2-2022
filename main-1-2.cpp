@@ -7,7 +7,7 @@ int main () {
   m2=new MusicBox("a",300);
   m3=new MusicBox("b",400);
   StoreShelf *storeshelf;
-  storeshelf=new StoreShelf(5);
+  storeshelf=new StoreShelf(2);
   cout<<storeshelf->get_width()<<endl;
 // cout<<clinic->get_MusicBoxs()<<endl;
   cout<<storeshelf->get_num_music_boxes()<<endl;
@@ -18,6 +18,7 @@ int main () {
   cout<<_return<<endl;
   _return=storeshelf->add_music_box(*m3)?"successful":"full!";
   cout<<_return<<endl;
+  cout<<storeshelf->get_num_music_boxes()<<endl;
   MusicBox *MusicBoxs=storeshelf->get_contents();
   for (int i = 0; i < storeshelf->get_num_music_boxes(); i++) 
   {

@@ -6,6 +6,7 @@ using namespace std;
 class StoreShelf{
     private:
         int width;
+        int max_width;
         int curr_size;
         MusicBox *members;
     public:
