@@ -26,54 +26,50 @@ int main () {
 //     cout<<MusicBoxs[i].get_width()<<endl;
 //   }
 //   delete storeshelf;
-MusicBox m1("a",10);
-MusicBox m2("b",50);
-MusicBox m3("c",40);
-MusicBox m4("d",20);
-MusicBox m5("e",30);
-MusicBox m6("f",10);
+MusicBox a("a",10);
+MusicBox b("b",50);
+MusicBox c("c",40);
+MusicBox d("d",20);
+MusicBox e("e",30);
+MusicBox f("f",10);
 StoreShelf storeshelf(5);
- cout << storeshelf.get_num_music_boxes() << endl;
-
-  cout << boolalpha << storeshelf.add_music_box(m1) << endl;
-
-  cout << storeshelf.get_num_music_boxes() << endl;
-
-  cout << boolalpha << storeshelf.add_music_box(m2) << endl;
-
-  cout << storeshelf.get_num_music_boxes() << endl;
-
-  cout << boolalpha << storeshelf.add_music_box(m3) << endl;
-
-  cout << storeshelf.get_num_music_boxes() << endl;
-
-  cout << boolalpha << storeshelf.add_music_box(m4) << endl;
-
-  cout << storeshelf.get_num_music_boxes() << endl;
-
-  cout << boolalpha << storeshelf.add_music_box(m5) << endl;
-
-  cout << storeshelf.get_num_music_boxes() << endl;
-
-  cout << boolalpha << storeshelf.add_music_box(m6) << endl;
-
-  cout << storeshelf.get_num_music_boxes() << endl;
-
-
-  cout << endl;
-  // cout << "piano in orchestra : " << boolalpha
-  //      << storeshelf.has_instrument("piano") << endl;
-
-  // cout << "violin in storeshelf : " << boolalpha
-  //      << storeshelf.has_instrument("violin") << endl;
-
-  MusicBox *members = storeshelf.get_contents();
-
-  cout << "Musician's Instrument and their Experience in storeshelf : " << endl;
-
-  for (int i = 0; i < storeshelf.get_num_music_boxes(); i++)
-
-    cout << members[i].get_song() << " " << members[i].get_width()
-         << endl;
+ cout<<storeshelf.get_width() <<endl;
+ cout<<storeshelf.get_num_music_boxes()<<endl;
+ if (storeshelf.add_music_box(a)){
+  cout<<"Music added"<<endl;
+  cout<<storeshelf.get_num_music_boxes()<<endl;
+ }else{cout<<"Shelf is full"<<endl;}
+ if (storeshelf.add_music_box(b)){
+  cout<<"Music added"<<endl;
+  cout<<storeshelf.get_num_music_boxes()<<endl;
+ }else{cout<<"Shelf is full"<<endl;}
+ if (storeshelf.add_music_box(c)){
+  cout<<"Music added"<<endl;
+  cout<<storeshelf.get_num_music_boxes()<<endl;
+ }else{cout<<"Shelf is full"<<endl;}
+ if (storeshelf.add_music_box(d)){
+  cout<<"Music added"<<endl;
+  cout<<storeshelf.get_num_music_boxes()<<endl;
+ }else{cout<<"Shelf is full"<<endl;}
+ if (storeshelf.add_music_box(e)){
+  cout<<"Music added"<<endl;
+  cout<<storeshelf.get_num_music_boxes()<<endl;
+ }else{cout<<"Shelf is full"<<endl;}
+ if (storeshelf.add_music_box(f)){
+  cout<<"Music added"<<endl;
+  cout<<storeshelf.get_num_music_boxes()<<endl;
+ }else{cout<<"Shelf is full"<<endl;}
+ 
 return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
