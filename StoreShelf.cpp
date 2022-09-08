@@ -2,13 +2,13 @@
 #include<iostream>
 #include"StoreShelf.h"
 using namespace std;
-StoreShelf::StoreShelf(){
-    max_width=0;
-    members=new MusicBox[max_width];
+StoreShelf::StoreShelf(): max_width(0),
+    members(NULL){
+   
 
 }
-StoreShelf::StoreShelf(int width){
-    max_width=width;
+StoreShelf::StoreShelf(int width):max_width(width){
+    
     members=new MusicBox[width];
 }
 int StoreShelf::get_num_music_boxes(){
@@ -24,7 +24,7 @@ MusicBox* StoreShelf::get_contents(){
     return members;
 }
 bool StoreShelf::add_music_box(MusicBox a_music_box){
-    if (curr_size == max_width)
+    if (curr_size < max_width)
   {
     members[curr_size] = a_music_box;
     curr_size++;
@@ -34,5 +34,5 @@ bool StoreShelf::add_music_box(MusicBox a_music_box){
 }
 StoreShelf::~StoreShelf()
 {
-   delete[] members;
+    if (members != NULL) delete[] members;
 }
