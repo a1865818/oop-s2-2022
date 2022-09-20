@@ -64,7 +64,7 @@ Room::Room(int rNumber)
 	{
 		currentItem = new Item("", 0);
 	}
-	// create alive Monsters for the room 6 and 8, and default ( dead) monsters for other rooms
+	// create alive enemys for the room 6 and 8, and default ( dead) enemys for other rooms
 	if (numbers == 8)
 	{
 		currentEnemy = new Enemy(*Item1, "Akainu", true);
@@ -89,7 +89,7 @@ void Room::setNumber(int rNumber)
 {
 	numbers = rNumber;
 }
-// method changing monster of room, taking a monster pointer as parameter
+// method changing enemy of room, taking a enemy pointer as parameter
 void Room::setCurrentEnemy(Enemy *rEnemy)
 {
 	currentEnemy = rEnemy;
@@ -99,7 +99,7 @@ void Room::setCurrentItem(Item *rItem)
 {
 	currentItem = rItem;
 }
-// method returning the monster in the room
+// method returning the enemy in the room
 Enemy *Room::getCurrentEnemy()
 {
 	return currentEnemy;
@@ -109,7 +109,7 @@ Item *Room::getCurrentItem()
 {
 	return currentItem;
 }
-// method to remove the current monster
+// method to remove the current enemy
 void Room::removeEnemy()
 {
 	delete currentEnemy;

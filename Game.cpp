@@ -138,7 +138,7 @@ void Game::attack()
 		invent = currentPlayer->get_inventory();
 		Item *itemList;
 		itemList = invent->getItemList();
-		// check if the player has the right weapon to kill that monster
+		// check if the player has the right weapon to defeat enemy
 		bool check = false;
 		for (int i = 0; i < 7; i++)
 		{
@@ -155,7 +155,7 @@ void Game::attack()
 			lose();
 		}
 	}
-	// announce if no monster has been found in the room
+	// announce if no enemy has been found in the room
 	else
 	{
 		cout << "Nothing can be attacked!" << endl;
@@ -197,7 +197,7 @@ void Game::showLocation()
 	// display the name and the location
 	cout << endl
 		 << currentPlayer->get_name() << ", you are in Room " << currentRoomNumber << "." << endl;
-	// display item and monster in the room
+	// display item and enemy in the room
 	if (roomList[currentRoomNumber - 1]->getCurrentItem()->get_value() != 0)
 	{
 		cout << "There is " << roomList[currentRoomNumber - 1]->getCurrentItem()->get_name() << " in this room!" << endl;
@@ -206,7 +206,7 @@ void Game::showLocation()
 	{
 		cout << "There is nothing valuable in this room!" << endl;
 	}
-	// if the monster is alive then announce a msg about the monster
+	// if the enemy is alive then announce a msg about the enemy
 	if (roomList[currentRoomNumber - 1]->getCurrentEnemy()->get_status())
 	{
 		cout << "WATCH OUT!" << endl;
