@@ -24,22 +24,25 @@ int Airplane::get_numPassengers(){
     return numPassengers;
 }
 void Airplane::fly(int headwind, int minutes){
-    if (fuel<20)
-    {
-        fuel=fuel;
-        numberOfFlights=numberOfFlights;
-    }else{
-       if (headwind>=60)
-        {
-            fuel=fuel-(0.5*minutes)-(0.001*(numPassengers)*minutes);
-        }
-        else if (headwind<60){
-            fuel=fuel-(0.3*minutes)-(0.001*(numPassengers)*minutes);
-        }
-        numberOfFlights++;
+     float FuelUsed = 0;
+    if(headwind >= 60){
+        FuelUsed = 0.5 * minutes;
+    }
+    if(headwind < 60){
+        FuelUsed = 0.3 * minutes;
+    }
+    if(numPassengers > 0){
+        FuelUsed = FuelUsed + (minutes*numPassengers * 0.001);
+    }
+
+    if (fuel < 20 ){
     }
     
+    if(fuel - FuelUsed > 0){
+        fuel = fuel - FuelUsed;
+        numberOfFlights++;
+    }
 }
 Airplane::~Airplane() {
-    
+
 }
